@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console", "Console\Console.csproj", "{BDE7A07F-A511-4608-A1CE-08D2BD51C373}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfService", "WcfService\WcfService.csproj", "{0B33DB3F-ED25-4865-960C-D6AC730B0CD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfClient", "WcfClient\WcfClient.csproj", "{DAE19A30-5D14-40D9-B36F-77EB5C7D39DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertDocument", "ConvertDocument\ConvertDocument.csproj", "{A9C22224-DD60-4662-AB21-4BB1F4057FA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDE7A07F-A511-4608-A1CE-08D2BD51C373}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDE7A07F-A511-4608-A1CE-08D2BD51C373}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDE7A07F-A511-4608-A1CE-08D2BD51C373}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDE7A07F-A511-4608-A1CE-08D2BD51C373}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B33DB3F-ED25-4865-960C-D6AC730B0CD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B33DB3F-ED25-4865-960C-D6AC730B0CD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B33DB3F-ED25-4865-960C-D6AC730B0CD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B33DB3F-ED25-4865-960C-D6AC730B0CD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAE19A30-5D14-40D9-B36F-77EB5C7D39DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAE19A30-5D14-40D9-B36F-77EB5C7D39DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAE19A30-5D14-40D9-B36F-77EB5C7D39DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAE19A30-5D14-40D9-B36F-77EB5C7D39DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9C22224-DD60-4662-AB21-4BB1F4057FA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9C22224-DD60-4662-AB21-4BB1F4057FA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9C22224-DD60-4662-AB21-4BB1F4057FA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9C22224-DD60-4662-AB21-4BB1F4057FA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://lucian-pc/tfs/first
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Console\\Console.csproj
+		SccProjectName1 = Console
+		SccLocalPath1 = Console
+		SccProjectUniqueName2 = WcfService\\WcfService.csproj
+		SccProjectName2 = WcfService
+		SccLocalPath2 = WcfService
+		SccProjectUniqueName3 = WcfClient\\WcfClient.csproj
+		SccProjectName3 = WcfClient
+		SccLocalPath3 = WcfClient
+		SccProjectUniqueName4 = ConvertDocument\\ConvertDocument.csproj
+		SccProjectName4 = ConvertDocument
+		SccLocalPath4 = ConvertDocument
+	EndGlobalSection
+EndGlobal
