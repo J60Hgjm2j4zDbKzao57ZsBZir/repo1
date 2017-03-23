@@ -8,62 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WcfService
-{
-    using System.Runtime.Serialization;
-
-
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute( "System.Runtime.Serialization", "4.0.0.0" )]
-    [System.Runtime.Serialization.DataContractAttribute( Name = "CompositeType", Namespace = "http://schemas.datacontract.org/2004/07/WcfService" )]
-    public partial class CompositeType: object, System.Runtime.Serialization.IExtensibleDataObject
-    {
-
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-
-        private bool BoolValueField;
-
-        private string StringValueField;
-
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData
-        {
-            get
-            {
-                return this.extensionDataField;
-            }
-            set
-            {
-                this.extensionDataField = value;
-            }
-        }
-
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public bool BoolValue
-        {
-            get
-            {
-                return this.BoolValueField;
-            }
-            set
-            {
-                this.BoolValueField = value;
-            }
-        }
-
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string StringValue
-        {
-            get
-            {
-                return this.StringValueField;
-            }
-            set
-            {
-                this.StringValueField = value;
-            }
-        }
-    }
-}
 
 
 [System.CodeDom.Compiler.GeneratedCodeAttribute( "System.ServiceModel", "4.0.0.0" )]
@@ -76,18 +20,6 @@ public interface IService1
 
     [System.ServiceModel.OperationContractAttribute( Action = "http://tempuri.org/IService1/Convert", ReplyAction = "http://tempuri.org/IService1/ConvertResponse" )]
     System.Threading.Tasks.Task<string> ConvertAsync( string content );
-
-    [System.ServiceModel.OperationContractAttribute( Action = "http://tempuri.org/IService1/GetData", ReplyAction = "http://tempuri.org/IService1/GetDataResponse" )]
-    string GetData( int value );
-
-    [System.ServiceModel.OperationContractAttribute( Action = "http://tempuri.org/IService1/GetData", ReplyAction = "http://tempuri.org/IService1/GetDataResponse" )]
-    System.Threading.Tasks.Task<string> GetDataAsync( int value );
-
-    [System.ServiceModel.OperationContractAttribute( Action = "http://tempuri.org/IService1/GetDataUsingDataContract", ReplyAction = "http://tempuri.org/IService1/GetDataUsingDataContractResponse" )]
-    WcfService.CompositeType GetDataUsingDataContract( WcfService.CompositeType composite );
-
-    [System.ServiceModel.OperationContractAttribute( Action = "http://tempuri.org/IService1/GetDataUsingDataContract", ReplyAction = "http://tempuri.org/IService1/GetDataUsingDataContractResponse" )]
-    System.Threading.Tasks.Task<WcfService.CompositeType> GetDataUsingDataContractAsync( WcfService.CompositeType composite );
 }
 
 [System.CodeDom.Compiler.GeneratedCodeAttribute( "System.ServiceModel", "4.0.0.0" )]
@@ -132,25 +64,5 @@ public partial class Service1Client: System.ServiceModel.ClientBase<IService1>, 
     public System.Threading.Tasks.Task<string> ConvertAsync( string content )
     {
         return base.Channel.ConvertAsync( content );
-    }
-
-    public string GetData( int value )
-    {
-        return base.Channel.GetData( value );
-    }
-
-    public System.Threading.Tasks.Task<string> GetDataAsync( int value )
-    {
-        return base.Channel.GetDataAsync( value );
-    }
-
-    public WcfService.CompositeType GetDataUsingDataContract( WcfService.CompositeType composite )
-    {
-        return base.Channel.GetDataUsingDataContract( composite );
-    }
-
-    public System.Threading.Tasks.Task<WcfService.CompositeType> GetDataUsingDataContractAsync( WcfService.CompositeType composite )
-    {
-        return base.Channel.GetDataUsingDataContractAsync( composite );
     }
 }
