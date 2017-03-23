@@ -18,4 +18,4 @@ Notes:
 The library itself uses JSON.NET for conversion (I added the dependency in my library ConvertDocument via NuPackage). The conversion funtions that I was able to find in JSON.NET need to have the full contents in RAM, therefore even though ConvertDocument.DoConvertDocument() takes streams as parameters, it will read those streams fully into strings (in a way defeating the purpose of passing streams - I made it this way so that if the implementation is changed to handle streams properly, the signature of the function will stay the same). 
 - likewise, the WCF client sends the entire contents as a string to the WCF server, rather than doing any streaming.
 
-If being able to handle harge streas was an important requirement, you can let me know and I'll look at it in more detail. Thanks!
+If being able to handle harge streams was an important requirement, you can let me know and I'll look at it in more detail. Thanks!
